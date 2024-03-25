@@ -5,7 +5,8 @@ const MANIFEST: Record<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   React.LazyExoticComponent<(props: any) => ReactNode>
 > = {
-  "Counter": lazy(() => import(`../count/Counter`)),
+  "Counter": lazy(() => import("../count/Counter")),
+  "Main": lazy(() => import("../layout/main")),
 };
 
 class Registry {

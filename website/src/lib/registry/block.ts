@@ -9,9 +9,10 @@ import {
   record,
   string,
   transform,
+  ulid,
   unknown,
 } from "valibot";
-import { Ulid, ulid } from "../ulid/ulid";
+import { Ulid } from "../ulid/ulid";
 import { useQuery } from "@tanstack/react-query";
 
 type Input = {

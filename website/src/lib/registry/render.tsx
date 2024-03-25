@@ -7,7 +7,7 @@ type Props = {
   blocks?: Array<Block>;
 };
 
-export default function RenderBlock(props: Props) {
+export default function Render(props: Props) {
   return (
     <Fragment>
       {props.blocks?.map((block) => {
@@ -17,7 +17,7 @@ export default function RenderBlock(props: Props) {
           <Fragment key={block.id.toString()}>
             <Suspense fallback={<div>Loading...</div>}>
               <Component {...block.props}>
-                <RenderBlock blocks={block.children} />
+                <Render blocks={block.children} />
               </Component>
             </Suspense>
           </Fragment>
