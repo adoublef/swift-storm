@@ -21,6 +21,3 @@ export class Ulid {
     return this.value;
   }
 }
-
-/** */
-export { ulidPipe as ulid };
