@@ -1,15 +1,17 @@
 {
   "blocks": [
     {
-      "id": "01HSVREK6ZP9KM0A0FB5XNJQKK",
-      "component": "Counter"
-    },
-    {
-      "id": "01HSVRFYRW7TRXC4Y8FS7RJ131",
-      "component": "Counter",
-      "props": {
-        "init": 5
-      }
+      "id": "01HSVSZP8TXTX7ZGJ0S2C1SZ37",
+      "component": "Main",
+      "children": [
+        {
+          "id": "01HSVT173J45P6JFQD8H66075V",
+          "component": "Counter",
+          "props": {
+            "init": 10
+          }
+        }
+      ]
     }
   ]
 }
