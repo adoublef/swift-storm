@@ -1,0 +1,15 @@
+{
+  "blocks": [
+    {
+      "id": "01HSVREK6ZP9KM0A0FB5XNJQKK",
+      "component": "Counter"
+    },
+    {
+      "id": "01HSVRFYRW7TRXC4Y8FS7RJ131",
+      "component": "Counter",
+      "props": {
+        "init": 5
+      }
+    }
+  ]
+}
