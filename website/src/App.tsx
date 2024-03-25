@@ -1,6 +1,6 @@
 import "./App.css";
 import { useQueryBlock } from "./lib/registry/block";
-import RenderBlock from "./lib/registry/RenderBlock";
+import Render from "./lib/registry/render";
 
 export default function App() {
   const { isLoading, isError, data, error } = useQueryBlock();
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <h1>Server Driven UI</h1>
-      <RenderBlock blocks={data} />
+      <Render blocks={data} />
     </>
   );
 }
